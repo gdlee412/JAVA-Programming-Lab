@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Student {
+
+	public static void main(String[] args) {
+		String studentname, department;
+		int birthyear, studentage;
+		float GPA;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Enter your name: ");
+		studentname = scan.nextLine();
+		System.out.println(studentname);
+		
+	}
+
+}

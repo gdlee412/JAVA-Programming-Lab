@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Student studentObject = new GPAcalc();
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Enter your name: ");
+		studentObject.studentname = scan.nextLine();
+		System.out.print("Enter your date of birth: ");
+		studentObject.birthyear = scan.nextInt();
+		studentObject.birthyear = 2022 - studentObject.birthyear;
+		System.out.print("Enter your cumulative GPA: ");
+		studentObject.GPA = scan.nextFloat();
+		System.out.print("Enter your department: ");
+		studentObject.department = scan.nextLine();
+		
+		
+
+	}
+
+}

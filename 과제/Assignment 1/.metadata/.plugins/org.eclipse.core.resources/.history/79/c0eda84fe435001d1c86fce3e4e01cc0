@@ -1,0 +1,11 @@
+public class Student {
+	
+	public String studentname, department;
+	public int birthyear, studentage;
+	public float GPA;
+
+	void studentObject(float GPA) {	
+		
+	
+	}
+}

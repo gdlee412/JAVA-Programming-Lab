@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Student {
+	
+	public String studentName;
+	public String studentDepartment;
+	public int studentBirthYear;
+	public float cumulativeGPA;
+
+	void Studentage(float birthYear) {	
+		int currentStudentAge;
+		
+		currentStudentAge = 2022 - birthYear;
+		
+	
+	}
+}

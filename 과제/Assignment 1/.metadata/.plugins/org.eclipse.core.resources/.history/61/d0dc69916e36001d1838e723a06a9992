@@ -1,0 +1,39 @@
+//import java util
+import java.util.*;
+
+public class Exponent {
+
+	//power of baseNumber to get possiblePowerNumber if it is a power
+	static int powerValue;
+	
+	public static void main(String[] args) {
+		//declaring of necessary variables
+		int baseNumber;
+		int possiblePowerNumber;
+		boolean powerDeterminant;	//is possiblePowerNumber a power of baseNumber
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter the number: ");
+		baseNumber = input.nextInt();
+		System.out.print("Enter your guessed power of above number: ");
+		possiblePowerNumber = input.nextInt();
+		
+		
+
+	}
+	
+	public static boolean isPower(int )
+	
+	
+	public static boolean isDivisible(int powerNumber, int baseNumber)
+	{
+		if((powerNumber % baseNumber) == 0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+}

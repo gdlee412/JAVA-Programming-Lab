@@ -1,0 +1,12 @@
+public class Main {
+
+	public static void main(String[] args) {
+		String studentname, department;
+		int studentage;
+		float GPA;
+		Student studentobject = new Student(studentname, studentage, GPA, department);
+		System.out.println(Student.getstudentname(args));
+
+	}
+
+}

@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Student {
+
+	public static void Student(String[] args) {
+		String studentname, department;
+		int birthyear, studentage;
+		float GPA;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Enter your name: ");
+		studentname = scan.nextLine();
+		System.out.print("Enter your date of birth: ");
+		birthyear = scan.nextInt();
+		studentage = 2022 - birthyear;
+		System.out.print("Enter your cumulative GPA: ");
+		GPA = scan.nextFloat();
+		System.out.print("Enter your department: ");
+		department = scan.nextLine();
+	}
+}

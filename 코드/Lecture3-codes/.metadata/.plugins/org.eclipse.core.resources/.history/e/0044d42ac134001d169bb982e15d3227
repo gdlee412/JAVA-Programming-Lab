@@ -1,0 +1,17 @@
+
+public class ball {
+
+	String color;
+	float size;
+	String shape;
+	
+	void Set_Ball_Color(String BallColor) {
+			color = BallColor;
+	}
+	void Set_Ball_Size(float BallSize) {
+		size = BallSize;
+	}
+	void Set_Ball_Shape(String BallShape) {
+		shape = BallShape;
+	}
+}

@@ -1,0 +1,29 @@
+//import java util
+import java.util.*;
+
+public class Exponent {
+
+	public static void main(String[] args) {
+		//declaring of necessary variables
+		int baseNumber;
+		int possiblePowerNumber;
+		
+		Scanner input = new Scanner(System.in);
+		
+		
+		
+
+	}
+
+	public static boolean isDivisible(int powerNumber, int baseNumber)
+	{
+		if((powerNumber % baseNumber) == 0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+}

@@ -1,0 +1,35 @@
+//import for needed classes
+import java.util.*;
+
+public class KaiBaiBo 
+{
+	public static void main(String[] args) 
+	{
+		//declaring needed variables
+		int computerChoice;
+		int userChoice;
+		int [] score = new int[2];
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("Let's play Kai-Bai-Bo(scissors, rock, paper)");
+		for(int roundNumber = 1; roundNumber <= 3; roundNumber++)
+		{
+			System.out.println("Round " + roundNumber);
+			System.out.println("Kai-Bai-Bo!");
+			System.out.println("1. Kai (scissors)\n2. Bai (rock)\n 3.Bo (paper)");
+			System.out.print("Your choice: ");
+			userChoice = input.nextInt();
+			computerChoice = getComputerChoice();
+		} 
+	}
+	
+	public static int getComputerChoice()
+	{
+		Random randomGenerator = new Random();
+		
+		int computerChoice = randomGenerator.nextInt(3) + 1;
+		
+		return computerChoice;
+	}
+
+}

@@ -1,0 +1,20 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		ball football = new ball();
+		football.color = "blue";
+		football.shape = "circle";
+		football.size = 15.2f;
+		football.Set_Ball_Color("Black");
+		football.Set_Ball_Shape("Elipse");
+		
+		ball tennis = new ball();
+		tennis.color = "yellow";
+		tennis.shape = "circle";
+		tennis.size = 9.12f;
+		
+		
+	}
+
+}
