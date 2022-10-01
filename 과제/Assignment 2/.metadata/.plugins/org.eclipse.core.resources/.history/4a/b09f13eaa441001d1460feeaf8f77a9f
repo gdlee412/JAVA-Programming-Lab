@@ -1,0 +1,6 @@
+
+public class Square extends Shape2D {
+	//initialize fields
+	//edge of square
+	private double edge;
+}

@@ -1,0 +1,6 @@
+
+public class Circle extends Shape2D {
+	private double radius;
+	
+	
+}

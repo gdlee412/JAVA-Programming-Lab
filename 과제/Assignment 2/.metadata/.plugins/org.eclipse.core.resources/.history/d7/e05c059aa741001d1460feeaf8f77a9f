@@ -1,0 +1,17 @@
+//import for scanner
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int choice;
+		
+		//create scanner for input
+		Scanner input = new Scanner(System.in);
+		
+		//ask for input
+		System.out.println("=== Welcome to TEACH MATH ===");
+		
+	}
+
+}

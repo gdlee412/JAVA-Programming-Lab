@@ -1,0 +1,27 @@
+
+public class Book {
+	//required fields
+	//book ID
+	public int bookID;
+	//book Title
+	public String bookTitle;
+	//book's current ratings
+	public double bookRating;
+	//number of reviews
+	public int reviewCount;
+	
+	//default constructor
+	public Book(int bookID, String bookTitle, int reviewCount) {
+		super();
+		this.bookID = bookID;
+		this.bookTitle = bookTitle;
+		//book rating is defaulted with 5 if reviewCount = 0
+		if(reviewCount == 0)
+		{
+			this.bookRating = 5;
+		}
+		this.reviewCount = reviewCount;
+	}
+	
+	
+}

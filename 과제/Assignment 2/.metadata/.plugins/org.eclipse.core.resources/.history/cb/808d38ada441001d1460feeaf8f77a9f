@@ -1,0 +1,13 @@
+
+public class Circle extends Shape2D {
+	//initializing fields
+	//radius of circle
+	private double radius;
+
+	//
+	public Circle(double radius) {
+		this.radius = radius;
+	}
+	
+	
+}

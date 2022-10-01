@@ -1,0 +1,158 @@
+
+//import for scanner
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// to store the increasing percentage
+		int userInputChoice = 1;
+		// create scanner for inputs
+		Scanner input = new Scanner(System.in);
+
+		// initialize the two book objects
+		Book firstBook = new Book(2343, "Harry Potter", 0);
+		Book secondBook = new Book(4434, "Deep Learning", 0);
+
+		// continue looping if userInputChoice = 1
+		while (userInputChoice == 1) {
+			// initialize the book order number for input
+			int bookOrderNum;
+
+			// while loop to continuously ask for input until the right ones are given
+			while (true) {
+				// print book information using toString method
+				System.out.println("=======================================");
+				System.out.println("Book 1: " + firstBook);
+				System.out.println("===========");
+				System.out.println("Book 2: " + secondBook);
+				System.out.println("=======================================");
+
+				// ask for user input
+				System.out.print("Please select book (order number): ");
+				bookOrderNum = input.nextInt();
+
+				// if case to see if book order number exists
+				if (bookOrderNum == 1 || bookOrderNum == 2) {
+					break;
+				} else {
+					System.out.println("Error! No such book order number exists. Try again");
+				}
+				
+			}
+			
+			//if 1st book was selected, update its ratings in the updateBookRatings method
+			if(bookOrderNum == 1) {
+				updateBookRatings(firstBook);
+			}
+			//due to the previous loop of checking for book existence, the only else choice is the second book
+			else {
+				updateBookRatings(secondBook);
+			}
+			
+			//ask for input whether the user wants to add more rates
+			System.out.print("Would you like to rate more (1: yes, 0: no): ");
+			userInputChoice = input.nextInt();
+			//due to while loop condition, if user inputs 1 (yes), loop will continue,
+			//if input is 0, loop will end
+		}
+	}
+	
+	//updateBookRatings method
+	//this method will ask for ratings and will update the book reviews
+	public static void updateBookRatings(Book bookobject) {
+		// create scanner for inputs
+		Scanner input = new Scanner(System.in);
+		
+		//to receive user input of book ratings
+		double bookRatingInput;
+		//print book title
+		System.out.println("You selected Book: " + bookobject.getBookTitle());
+		//ask for rate
+		System.out.print("Please enter your rate: ");
+		bookRatingInput = input.nextDouble();
+		//update book rate using updateRate method
+		bookobject.updateRate(bookRatingInput);
+		
+		//close scanner
+		input.close();
+	}
+
+}
+
+/*
+
+//import for scanner
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// to store the increasing percentage
+		int userInputChoice = 1;
+		// to store the book rating input
+		double bookRatingInput;
+		// create scanner for inputs
+		Scanner input = new Scanner(System.in);
+
+		// initialize the two book objects
+		Book firstBook = new Book(2343, "Harry Potter", 0);
+		Book secondBook = new Book(4434, "Deep Learning", 0);
+
+		// continue looping if userInputChoice = 1
+		while (userInputChoice == 1) {
+			// initialize the book order number for input
+			int bookOrderNum;
+			
+
+			// while loop to continuously ask for input until the right ones are given
+			while (true) {
+				// print book information using toString method
+				System.out.println("=======================================");
+				System.out.println("Book 1: " + firstBook);
+				System.out.println("===========");
+				System.out.println("Book 2: " + secondBook);
+				System.out.println("=======================================");
+
+				// ask for user input
+				System.out.print("Please select book (order number): ");
+				bookOrderNum = input.nextInt();
+
+				// if case to see if book order number exists
+				if (bookOrderNum == 1 || bookOrderNum == 2) {
+					break;
+				} else {
+					System.out.println("Error! No such book order number exists. Try again");
+				}
+				
+			}
+			
+			//if 1st book was selected, update its ratings
+			if(bookOrderNum == 1) {
+				//ask for rating
+				System.out.println("You Selected Book: " + firstBook.getBookTitle());
+				System.out.print("Please enter your rate: ");
+				bookRatingInput = input.nextDouble();
+				//update book rate using updateRate method
+				firstBook.updateRate(bookRatingInput);
+				
+			}
+			//due to the previous loop of checking for book existence, the only else choice is the second book
+			else {
+				//ask for rating
+				System.out.println("You Selected Book: " + secondBook.getBookTitle());
+				System.out.print("Please enter your rate: ");
+				bookRatingInput = input.nextDouble();
+				//update book rate using updateRate method
+				secondBook.updateRate(bookRatingInput);
+			}
+			
+			//ask for input whether the user wants to add more rates
+			System.out.print("Would you like to rate more (1: yes, 0: no): ");
+			userInputChoice = input.nextInt();
+			//due to while loop condition, if user inputs 1 (yes), loop will continue,
+			//if input is 0, loop will end
+		}
+	}
+}
+*/

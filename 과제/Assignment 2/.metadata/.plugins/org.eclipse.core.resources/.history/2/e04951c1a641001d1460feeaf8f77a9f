@@ -1,0 +1,10 @@
+
+public class Cone extends Shape3D {
+	//initialize field
+	// radius of cone
+	private double radius;
+	// height of cone
+	private double height;
+	// circle object
+	private Circle circle;
+}

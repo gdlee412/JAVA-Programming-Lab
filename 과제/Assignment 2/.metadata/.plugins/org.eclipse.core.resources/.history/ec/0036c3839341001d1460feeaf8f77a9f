@@ -1,0 +1,16 @@
+
+public class Employee {
+	//the required fields
+	public String name;
+	public double salary;
+	public double tax;
+	public double insurance;
+	
+	public Employee(String name, double salary) {
+		super();
+		this.name = name;
+		this.salary = salary;
+	}
+	
+	
+}

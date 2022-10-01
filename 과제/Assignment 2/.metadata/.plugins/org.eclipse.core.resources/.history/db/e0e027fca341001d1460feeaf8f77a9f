@@ -1,0 +1,6 @@
+
+public class Shape2D {
+	//initialize fields
+	//area of shape
+	private double shapeArea;
+}
