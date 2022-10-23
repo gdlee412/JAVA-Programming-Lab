@@ -1,4 +1,0 @@
-
-public class SquarePyramid extends Shape3D {
-	private double edge;
-}
