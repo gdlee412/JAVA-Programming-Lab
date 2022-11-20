@@ -88,7 +88,7 @@ public class SwingWorkerFrame extends JFrame {
 			 */
 			protected Boolean doInBackground() throws Exception {
 				// Simulate useful work
-				for (int i = 2; i < 40; i++) {
+				for (int i = 1; i < 40; i++) {
 					Thread.sleep(100);
 					int results = fibonacci(i);
 
